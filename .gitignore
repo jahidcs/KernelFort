@@ -1,52 +1,67 @@
-# Prerequisites
-*.d
-
-# Object files
+# Compiled Object files
 *.o
-*.ko
 *.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
+# Compiled Dynamic libraries
 *.so
-*.so.*
-*.dylib
 
-# Executables
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executable files
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.elf
+a.out
+*.bin
 
-# Debug files
+# Assembly generated files
+*.lst
+*.map
+
+# Backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Debugging files
 *.dSYM/
-*.su
-*.idb
-*.pdb
+*.DS_Store
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Makefile artifacts
+*.d
+build/
+dist/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# CMake and build tools artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# VS Code settings (optional if you use VS Code)
+.vscode/
+
+# Generated documentation
+/docs/*.html
+/docs/*.pdf
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Bash history (if you accidentally put it)
+.bash_history
+
+# Others
+*.tar
+*.gz
+*.zip
+*.7z
