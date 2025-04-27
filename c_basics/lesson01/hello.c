@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Hello, KernelFort in C!\n");
+    printf("hello, world\n");
     return 0;
 }

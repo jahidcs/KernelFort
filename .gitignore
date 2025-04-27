@@ -1,67 +1,87 @@
-# Compiled Object files
+# ====================
+# KernelFort Project .gitignore
+# ====================
+
+# --- Compiled Object files ---
 *.o
 *.obj
 
-# Compiled Dynamic libraries
+# --- Compiled Dynamic libraries ---
 *.so
 
-# Compiled Static libraries
+# --- Compiled Static libraries ---
 *.a
 *.lib
 
-# Executable files
+# --- Executable files ---
 *.exe
 *.out
 *.elf
 a.out
 *.bin
 
-# Assembly generated files
+# --- Assembly generated files ---
 *.lst
 *.map
 
-# Backup files
+# --- Backup files ---
 *~
 *.swp
 *.swo
 *.bak
 
-# Debugging files
+# --- Debugging files ---
 *.dSYM/
 *.DS_Store
 
-# Makefile artifacts
+# --- Makefile artifacts ---
 *.d
 build/
 dist/
 
-# Logs and temporary files
+# --- Logs and temporary files ---
 *.log
 *.tmp
 
-# CMake and build tools artifacts
+# --- CMake and build tools artifacts ---
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 
-# VS Code settings (optional if you use VS Code)
+# --- VS Code settings ---
 .vscode/
 
-# Generated documentation
+# --- Generated documentation ---
 /docs/*.html
 /docs/*.pdf
 
-# System files
+# --- System files ---
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Bash history (if you accidentally put it)
+# --- Bash history (safety) ---
 .bash_history
 
-# Others
+# --- Archive files ---
 *.tar
 *.gz
 *.zip
 *.7z
+
+# --- Project-Specific: Ignore all compiled binaries (smart rule) ---
+# Ignore all files without an extension (binaries)
+*
+# But allow source files, folders, and important configs
+!*/
+!*.c
+!*.cpp
+!*.h
+!*.s
+!*.asm
+!*.sh
+!*.md
+!.gitignore
+!Makefile
+!CMakeLists.txt
